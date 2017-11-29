@@ -115,3 +115,62 @@ describe("makeFullNamesList()", function() {
     });
   });
 });
+describe("createListOfObjects()", function() {
+  it("should be a function", function() {
+    return expect(createListOfObjects).to.be.a("function");
+  });
+  describe("ninjaListOfObjects = createListOfObjects(realNinjas)", function() {
+    it("should return object for typeof ninjaListOfObjects", function() {
+      return expect(typeof ninjaListOfObjects[0]).to.equal("object");
+    });
+    it("should return Chuck for firstName of ninjaListOfObjects[0]", function() {
+      return expect(ninjaListOfObjects[0].firstName).to.equal("Chuck");
+    });
+    it("should return Norris for lastName of ninjaListOfObjects[0]", function() {
+      return expect(ninjaListOfObjects[0].lastName).to.equal("Norris");
+    });
+    it("should return Jackie for firstName of ninjaListOfObjects[1]", function() {
+      return expect(ninjaListOfObjects[1].firstName).to.equal("Jackie");
+    });
+    it("should return Chan for lastName of ninjaListOfObjects[1]", function() {
+      return expect(ninjaListOfObjects[1].lastName).to.equal("Chan");
+    });
+    it("should return Billy for firstName of ninjaListOfObjects[3]", function() {
+      return expect(ninjaListOfObjects[3].firstName).to.equal("Billy");
+    });
+    it("should return Blanks for lastName of ninjaListOfObjects[3]", function() {
+      return expect(ninjaListOfObjects[3].lastName).to.equal("Blanks");
+    });
+  });
+  describe("sportStarsListOfObjects = createListOfObjects(realSportsStars)", function() {
+    it("should return object for typeof sportStarsListOfObjects", function() {
+      return expect(typeof sportStarsListOfObjects).to.equal("object");
+    });
+    it("should return Ricky for firstName of sportStarsListOfObjects[1]", function() {
+      return expect(sportStarsListOfObjects[1].firstName).to.equal("Ricky");
+    });
+    it("should return Vaughn for lastName of sportStarsListOfObjects[1]", function() {
+      return expect(sportStarsListOfObjects[1].lastName).to.equal("Vaughn");
+    });
+    it("should return Jesus for firstName of sportStarsListOfObjects[3]", function() {
+      return expect(sportStarsListOfObjects[3].firstName).to.equal("Jesus");
+    });
+    it("should return Shuttlesworth for lastName of sportStarsListOfObjects[3]", function() {
+      return expect(sportStarsListOfObjects[3].lastName).to.equal(
+        "Shuttlesworth"
+      );
+    });
+  });
+});
+
+describe("createCarRecord()", function() {
+  it("should be a function", function() {
+    return expect(createCarRecord).to.be.a("function");
+  });
+  it("should return object for typeof newCar1", function() {
+    return expect(typeof newCar1).to.equal("object");
+  });
+  it("should return make = Ford and model = Pinto for newCar1", function() {
+    return expect(newCar1.make && newCar1.model).to.equal("Ford" && "Pinto");
+  });
+});
