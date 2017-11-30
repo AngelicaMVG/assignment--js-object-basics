@@ -173,4 +173,44 @@ describe("createCarRecord()", function() {
   it("should return make = Ford and model = Pinto for newCar1", function() {
     return expect(newCar1.make && newCar1.model).to.equal("Ford" && "Pinto");
   });
+  it("should return make = Pontiac and year = 2001 for newCar2", function() {
+    return expect(newCar2.make && newCar2.year).to.equal("Pontiac" && 2001);
+  });
+  it("should return model = Wrangler and license = 8HPN02 for newCar3", function() {
+    return expect(newCar3.model && newCar3.license).to.equal(
+      "Wrangler" && "8HPN02"
+    );
+  });
+  it("should return string for typeof newCar4", function() {
+    return expect(typeof newCar4).to.equal("string");
+  });
+  it("should return 'new record must have make, model, year, and license values for newCar4' for newCar4", function() {
+    return expect(newCar4).to.equal(
+      "new record must have make, model, year, and license values"
+    );
+  });
+  it("should return 'new record must have make, model, year, and license values for newCar5' for newCar5", function() {
+    return expect(newCar5).to.equal(
+      "new record must have make, model, year, and license values"
+    );
+  });
+  it("should return string for typeof newCar6", function() {
+    return expect(typeof newCar6).to.equal("string");
+  });
+  it("should return '1st, 2nd, and 4th arguments must be String' for newCar6", function() {
+    return expect(newCar6).to.equal(
+      "1st, 2nd, and 4th arguments must be String"
+    );
+  });
+  it("should return '1st, 2nd, and 4th arguments must be String' for newCar7", function() {
+    return expect(newCar7).to.equal(
+      "1st, 2nd, and 4th arguments must be String"
+    );
+  });
+  it("should return string for typeof newCar8", function() {
+    return expect(typeof newCar8).to.equal("string");
+  });
+  it("should return '3rd argument must be a Number' for newCar8", function() {
+    return expect(newCar8).to.equal("3rd argument must be a Number");
+  });
 });
