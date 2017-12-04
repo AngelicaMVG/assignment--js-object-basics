@@ -18,33 +18,6 @@
  *  ( see GROUP2 - GROUP4 console.assert() )
 **/
 
-function createCarRecord(make, model, year, license) {
-  var result = {
-    make: make,
-    model: model,
-    year: year,
-    license: license
-  };
-  if (
-    typeof make === "undefined" ||
-    typeof model === "undefined" ||
-    typeof year === "undefined" ||
-    typeof license === "undefined"
-  ) {
-    return "new record must have make, model, year, and license values";
-  } else if (
-    typeof make !== "string" ||
-    typeof model !== "string" ||
-    typeof license !== "string"
-  ) {
-    return "1st, 2nd, and 4th arguments must be String";
-  } else if (typeof year !== "number") {
-    return "3rd argument must be a Number";
-  }
-
-  return result;
-}
-
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var newCar1 = createCarRecord("Ford", "Pinto", 1969, "IOU7S2");

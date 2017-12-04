@@ -7,14 +7,6 @@
  * has the value blue, it should change it to red, and
  * vice-versa.
 */
-function flipColor(obj) {
-  if (obj.color === "blue") {
-    obj.color = "red";
-  } else {
-    obj.color = "blue";
-  }
-  return obj;
-}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

@@ -7,17 +7,6 @@
  * name.
  *
 **/
-function makeFullNamesList(array) {
-  var result = [];
-  for (var i = 0; i < array.length; i++) {
-    if (array[i].gender === "male") {
-      result.push("Mr. " + array[i].first + " " + array[i].last);
-    } else {
-      result.push("Ms. " + array[i].first + " " + array[i].last);
-    }
-  }
-  return result;
-}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 

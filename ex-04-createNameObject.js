@@ -7,16 +7,6 @@
  *
 **/
 
-function createNameObject(string) {
-  var word = string.split(" ");
-
-  var newObj = {
-    firstName: word[0],
-    lastName: word[1]
-  };
-  return newObj;
-}
-
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var nameObj1 = createNameObject("Benzo Lorenzo");

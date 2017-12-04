@@ -14,20 +14,6 @@
  *  => '<h1 class="grid small-section">Lorem ipsum dolor sit amet.</h1>'
 */
 
-function createHtmlElement(objArg) {
-  return (
-    "<" +
-    objArg.element +
-    ' class="' +
-    objArg.classNames +
-    '">' +
-    objArg.textContent +
-    "</" +
-    objArg.element +
-    ">"
-  );
-}
-
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var exampleObj1 = {

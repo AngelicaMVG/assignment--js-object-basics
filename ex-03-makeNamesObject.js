@@ -18,18 +18,6 @@
  *       set an object's property name.
  *
 */
-function makeNamesObject(str1, str2, str3) {
-  var name1 = str1.split(" ");
-  var name2 = str2.split(" ");
-  var name3 = str3.split(" ");
-
-  var newObj = {
-    [name1[0]]: name1[1],
-    [name2[0]]: name2[1],
-    [name3[0]]: name3[1]
-  };
-  return newObj;
-}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 var greatMenObj = makeNamesObject(

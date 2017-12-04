@@ -20,21 +20,6 @@
  * HINT: You might be able to reuse some of the logic from createNameObject()
 */
 
-function createListOfObjects(array) {
-  var result = [];
-  for (var i = 0; i < array.length; i++) {
-    let fullName = array[i].split(" ");
-    let name = fullName[0];
-    let lastName = fullName[1];
-    var objName = {
-      firstName: name,
-      lastName: lastName
-    };
-    result.push(objName);
-  }
-  return result;
-}
-
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*~*~*~*~
 
 var realNinjas = [
