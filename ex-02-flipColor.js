@@ -16,6 +16,15 @@ var tileObj = {
   color: "blue"
 };
 
+function flipColor(object) {
+  if (object.color === "blue") {
+    object.color = "red";
+  } else if (object.color === "red") {
+    object.color = "blue";
+  }
+  return object;
+}
+
 var tileObj2 = flipColor(tileObj);
 
 console.assert(tileObj2.color === "red");
